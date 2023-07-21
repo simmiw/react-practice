@@ -29,20 +29,18 @@ function ToDo() {
     });
 
     setCurentArray(newTasks);
-}
+  }
 
+  function pendingTask(id) {
+    const newTask1 = [...currentArray];
+    newTask1.forEach((item) => {
+      if (item.id === id) {
+        item.status = "pending";
+      }
+    });
 
-    function pendingTask(id) {
-      const newTask1 = [...currentArray];
-      newTask1.forEach((item) => {
-        if (item.id === id) {
-          item.status = "pending";
-        }
-      });
-    
-    setCurentArray(newTask1)
-    }
-
+    setCurentArray(newTask1);
+  }
 
   return (
     <>
@@ -53,27 +51,26 @@ function ToDo() {
         onChange={currentTaskData}
       />
       <button onClick={addTask}>Submit Task</button>
-      <ul>
-        {currentArray.map(function (item) {
-          return (
-            <li className="todo-list" key={item.id}>
+      {currentArray.map(function (item) {
+        return (
+          <div key={item.id}>
+            <br />
+            <span className="todo-list">
               {item.task}
               <button
                 disabled={item.status === "completed"}
-                onClick={() => completeTask(item.id)}
-              >
+                onClick={() => completeTask(item.id)}>
                 Complete
               </button>
               <button
-                disable={item.status === "pending"}
-                onClick={() => pendingTask(item.id)}
-              >
+                disabled={item.status === "pending"}
+                onClick={() => pendingTask(item.id)}>
                 Pending
               </button>
-            </li>
-          );
-        })}
-      </ul>
+            </span>
+          </div>
+        );
+      })}
     </>
   );
 }

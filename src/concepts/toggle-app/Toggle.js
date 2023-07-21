@@ -1,4 +1,4 @@
-import react, { useState } from "react";
+import React, { useState } from "react";
 
 // you're tasked with creating a component that toggles the visibility of a piece of text when a button is clicked.
 

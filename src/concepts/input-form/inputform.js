@@ -4,12 +4,6 @@ const InputForm = () => {
   const [currentName, setCurrentName] = useState("");
   const [currentEmail, setCurrentEmail] = useState("");
 
-  
-  function listItems() {
-   return `<li>${currentName}<li/>`
-  }
-
-
   const pushName = (event) => {
     setCurrentName(event.target.value);
   };
@@ -18,14 +12,12 @@ const InputForm = () => {
     setCurrentEmail(event.target.value);
   };
 
-
-
   return (
     <>
       <input
         type="text"
         value={currentName}
-        placeholder="Eneter your name"
+        placeholder="Enter your name"
         onChange={pushName}
       />
       <br />
@@ -34,14 +26,13 @@ const InputForm = () => {
       <input
         type="text"
         value={currentEmail}
-        placeholder="Eneter your email"
+        placeholder="Enter your email"
         onChange={pushEmail}
       />
       <br />
       <br />
-
-      <button onClick={listItems}>Submit Details</button>
-
+      <div>{currentName}</div>
+      <div>{currentEmail}</div>
     </>
   );
 };
