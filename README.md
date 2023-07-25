@@ -1,2 +1,2 @@
-# Javascript-Practice
-This repository has Javascript & React practice exercises.
+# React-Practice
+This repository has React practice exercises.
