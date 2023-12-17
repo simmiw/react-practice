@@ -10,6 +10,7 @@ import Toggle from "./concepts/toggle-app/Toggle";
 import List from "./concepts/userdetails-list/List";
 import PromiseAll from "./concepts/promise-all/PromiseAll";
 import { Routes, Route } from "react-router-dom";
+import TemperatureConverter from "./concepts/temperature-converter/temperatureConverter";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/character-counter" element={<CharacterCounter />} />
         <Route path="/color-switcher" element={<ColorSwitcher />} />
         <Route path="/form" element={<InputForm />} />
+        <Route path="/temperature-converter" element={<TemperatureConverter />} />
         <Route path="/todo-app" element={<ToDo />} />
         <Route path="/toggle-app" element={<Toggle />} />
         <Route path="/userdetails" element={<List />} />

@@ -18,16 +18,19 @@ const Home = () => {
         <Link to="/form">Form</Link>
       </li>
       <li>
-        <Link to="/todo-app"> ToDo App</Link>
+        <Link to="/todo-app">ToDo App</Link>
       </li>
       <li>
-        <Link to="/toggle-app"> Toggle App</Link>
+        <Link to="/toggle-app">Toggle App</Link>
       </li>
       <li>
-        <Link to="/userdetails"> UserDetails </Link>
+        <Link to="/temperature-converter">Temperature Converter</Link>
       </li>
       <li>
-        <Link to="/promise-all"> Promise.All</Link>
+        <Link to="/userdetails">UserDetails</Link>
+      </li>
+      <li>
+        <Link to="/promise-all">Promise.All</Link>
       </li>
     </>
   );
