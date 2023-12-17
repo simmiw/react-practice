@@ -1,37 +1,56 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+const listOfConcepts = [
+  {
+    title: "Click Capturing",
+    link: "./click-capturing"
+  },
+  {
+    title: "Character counter",
+    link: "/character-counter"
+  },
+  {
+    title: "Color switcher",
+    link: "/color-switcher"
+  },
+  {
+    title: "Form",
+    link: "/form"
+  },
+  {
+    title: "ToDo App",
+    link: "/todo-app"
+  },
+  {
+    title: "Toggle App",
+    link: "/toggle-app"
+  },
+  {
+    title: "Temperture converter",
+    link: "/temperature-converter"
+  },
+  {
+    title: "User Details",
+    link: "/userdetails"
+  },
+  {
+    title: "Promise.All",
+    link: "/promise-all"
+  }
+]
+
 const Home = () => {
+
+
   return (
     <>
       <h2> React Exercises</h2>
-      <li>
-        <Link to="./click-capturing">Click capturing</Link>
-      </li>
-      <li>
-        <Link to="/character-counter">Character counter</Link>
-      </li>
-      <li>
-        <Link to="/color-switcher">Color switcher</Link>
-      </li>
-      <li>
-        <Link to="/form">Form</Link>
-      </li>
-      <li>
-        <Link to="/todo-app">ToDo App</Link>
-      </li>
-      <li>
-        <Link to="/toggle-app">Toggle App</Link>
-      </li>
-      <li>
-        <Link to="/temperature-converter">Temperature Converter</Link>
-      </li>
-      <li>
-        <Link to="/userdetails">UserDetails</Link>
-      </li>
-      <li>
-        <Link to="/promise-all">Promise.All</Link>
-      </li>
+      <ul>
+        {listOfConcepts.map((concept) => {
+          return <li><Link to={`/${concept.link}`}>{concept.title}</Link></li>
+        })}
+      </ul>
     </>
   );
 };
