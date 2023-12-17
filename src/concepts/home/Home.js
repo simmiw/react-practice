@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const listOfConcepts = [
+export const listOfConcepts = [
   {
     title: "Click Capturing",
-    link: "./click-capturing"
+    link: "/click-capturing"
   },
   {
     title: "Character counter",
@@ -41,14 +41,12 @@ const listOfConcepts = [
 ]
 
 const Home = () => {
-
-
   return (
     <>
       <h2> React Exercises</h2>
       <ul>
-        {listOfConcepts.map((concept) => {
-          return <li><Link to={`/${concept.link}`}>{concept.title}</Link></li>
+        {listOfConcepts.map(({ title, link }) => {
+          return <li key={title}><Link to={link}>{title}</Link></li>
         })}
       </ul>
     </>
