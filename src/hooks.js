@@ -8,6 +8,8 @@ import Toggle from "./concepts/toggle-app/Toggle.js";
 import TemperatureConverter from "./concepts/temperature-converter/temperatureConverter.js";
 import PromiseAll from "./concepts/promise-all/PromiseAll.js";
 import List from "./concepts/userdetails-list/List.js";
+import Products from "./concepts/props/productBrand.js";
+import ProductBrand from "./concepts/props/productBrand.js";
 
 
 const listOfConcepts = [
@@ -61,6 +63,11 @@ const listOfConcepts = [
         title: "Promise.All",
         link: "/promise-all",
         component: PromiseAll
+    },
+    {
+        title: "Props",
+        link: "/productBrand",
+        component: ProductBrand
     }
 ]
 
