@@ -10,6 +10,7 @@ import PromiseAll from "./concepts/promise-all/PromiseAll.js";
 import List from "./concepts/userdetails-list/List.js";
 import Products from "./concepts/props/productBrand.js";
 import ProductBrand from "./concepts/props/productBrand.js";
+import ArrayDotSomeAndEvery from "./concepts/some&every/some&every.js";
 
 
 const listOfConcepts = [
@@ -68,6 +69,11 @@ const listOfConcepts = [
         title: "Props",
         link: "/productBrand",
         component: ProductBrand
+    },
+    {
+        title: "Array.Some & Array.Every",
+        link: "/some&every",
+        component: ArrayDotSomeAndEvery
     }
 ]
 
