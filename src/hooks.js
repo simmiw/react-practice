@@ -11,6 +11,7 @@ import List from "./concepts/userdetails-list/List.js";
 import Products from "./concepts/props/productBrand.js";
 import ProductBrand from "./concepts/props/productBrand.js";
 import ArrayDotSomeAndEvery from "./concepts/some&every/some&every.js";
+import { BindPolyfill } from "./concepts/bind-polyfill/bind-polyfill.js";
 
 
 const listOfConcepts = [
@@ -74,6 +75,11 @@ const listOfConcepts = [
         title: "Array.Some & Array.Every",
         link: "/some&every",
         component: ArrayDotSomeAndEvery
+    },
+    {
+        title: "Bind Polyfill",
+        link: "/bindpolyfill",
+        component: BindPolyfill
     }
 ]
 
