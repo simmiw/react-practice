@@ -12,6 +12,7 @@ import Products from "./concepts/props/productBrand.js";
 import ProductBrand from "./concepts/props/productBrand.js";
 import ArrayDotSomeAndEvery from "./concepts/some&every/some&every.js";
 import { BindPolyfill } from "./concepts/bind-polyfill/bind-polyfill.js";
+import ForEachLoop from "./concepts/loops/foreach.js";
 
 
 const listOfConcepts = [
@@ -80,6 +81,11 @@ const listOfConcepts = [
         title: "Bind Polyfill",
         link: "/bindpolyfill",
         component: BindPolyfill
+    },
+    {
+        title: "Js loops",
+        link: "/largetNumber",
+        component: ForEachLoop
     }
 ]
 
