@@ -16,6 +16,7 @@ import ForEachLoop from "./concepts/loops/foreach.js";
 import PromiseChain from "./concepts/promise-chain/promiseChain.js";
 import Set from "./concepts/set/set.js";
 import SetMethods from "./concepts/set/set.js";
+import MapMethods from "./concepts/Map/map.js";
 
 
 const listOfConcepts = [
@@ -99,6 +100,11 @@ const listOfConcepts = [
         title: "setmethods",
         link: "/setMethods",
         component: SetMethods
+    },
+    {
+        title: "Mapmethods",
+        link: "/MapMethods",
+        component: MapMethods
     },
 ]
 
