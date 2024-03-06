@@ -17,6 +17,8 @@ import PromiseChain from "./concepts/promise-chain/promiseChain.js";
 import Set from "./concepts/set/set.js";
 import SetMethods from "./concepts/set/set.js";
 import MapMethods from "./concepts/Map/map.js";
+import CssPositionPractice from "./concepts/position-in-css/cssPosition.js";
+import CssTransform from "./transform -in-css/index.js";
 
 
 const listOfConcepts = [
@@ -105,6 +107,16 @@ const listOfConcepts = [
         title: "Mapmethods",
         link: "/MapMethods",
         component: MapMethods
+    },
+    {
+        title: "CssPositionPractice",
+        link: "/csspositionpractice",
+        component: CssPositionPractice
+    },
+    {
+        title: "CssTransform",
+        link: "/cssTransform",
+        component: CssTransform
     },
 ]
 

@@ -1,0 +1,28 @@
+.container{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    font-size: large;
+    margin:80px auto;
+}
+
+.box1{
+    width: 150px;
+    height: 150px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    transform: scalex(2) skew(1) //double of its given width
+}
+
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(127, 142, 255);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    // transform: scaley(2) //double of its given height//
+    transform: translate(80px, 60px);
+}
