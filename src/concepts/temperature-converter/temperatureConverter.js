@@ -19,10 +19,14 @@ const TemperatureConverter = () => {
 
 
     return <>
-        <input type='number' className='input' value={inputTemperature} onChange={(e) => { setInputTemperature(e.target.value) }} placeholder='Enter Temperature' />
-        <br /> <button className='button' onClick={convertFtoC} disabled={!inputTemperature}>Convert F to C</button><button className='button' onClick={convertCtoF} disabled={!inputTemperature}>Convert C to F</button>
-        <br /><h2>{convertedTemp}</h2>
-
+        <input type='number' className='input' value={inputTemperature}
+            onChange={(e) => { setInputTemperature(e.target.value) }}
+            placeholder='Enter Temperature' />
+        <br />
+        <button className='button' onClick={convertFtoC} disabled={!inputTemperature}>Convert F to C</button>
+        <button className='button' onClick={convertCtoF} disabled={!inputTemperature}>Convert C to F</button>
+        <br />
+        <h2>{convertedTemp}</h2>
     </>
 
 }

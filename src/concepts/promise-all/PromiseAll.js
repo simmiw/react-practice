@@ -9,8 +9,7 @@ const PromiseAll = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    setIsLoading(true); // Loader is loading before fetching the APIs
-
+    setIsLoading(true); 
     const firstAPI = fetch("https://dummyjson.com/products").then((r) =>
       r.json()
     );
@@ -34,12 +33,12 @@ const PromiseAll = () => {
         setproducts(response[0].products);
         setComments(response[1].comments);
         setPersonDetails(response[2]);
-        setIsLoading(false); // Load got disabled after the response.
-      })
+        setIsLoading(false); 
+       })
       .catch(() => {
         setIsLoading(false);
         console.log("API is Failed");
-        setError("Data Fetching is Failed");
+        setError("Data fetching is Failed");
       });
   }, []);
   return (

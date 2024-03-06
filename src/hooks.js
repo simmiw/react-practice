@@ -14,6 +14,8 @@ import ArrayDotSomeAndEvery from "./concepts/some&every/some&every.js";
 import { BindPolyfill } from "./concepts/bind-polyfill/bind-polyfill.js";
 import ForEachLoop from "./concepts/loops/foreach.js";
 import PromiseChain from "./concepts/promise-chain/promiseChain.js";
+import Set from "./concepts/set/set.js";
+import SetMethods from "./concepts/set/set.js";
 
 
 const listOfConcepts = [
@@ -92,7 +94,12 @@ const listOfConcepts = [
         title: "promisesChain",
         link: "/promiseChain",
         component: PromiseChain
-    }
+    },
+    {
+        title: "setmethods",
+        link: "/setMethods",
+        component: SetMethods
+    },
 ]
 
 const useRoutes = () => { return listOfConcepts }
