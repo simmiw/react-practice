@@ -17,12 +17,13 @@
 }
 
 .box2{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background-color: rgb(127, 142, 255);
     display: flex;
+    font-size: large;
     align-items: center;
     align-content: center;
     // transform: scaley(2) //double of its given height//
-    transform: translate(80px, 60px);
+    transform: translate(50%, 50%);
 }
