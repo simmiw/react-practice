@@ -19,6 +19,8 @@ import SetMethods from "./concepts/set/set.js";
 import MapMethods from "./concepts/Map/map.js";
 import CssPositionPractice from "./concepts/position-in-css/cssPosition.js";
 import CssTransform from "./transform -in-css/index.js";
+import EventEmitter from "./concepts/event-emitter/eventemitter.js";
+import EvEmitter from "./concepts/event-emitter/eventemitter.js";
 
 
 const listOfConcepts = [
@@ -117,6 +119,11 @@ const listOfConcepts = [
         title: "CssTransform",
         link: "/cssTransform",
         component: CssTransform
+    },
+    {
+        title: "EventEmitter",
+        link: "/eventEmitter",
+        component: EvEmitter
     },
 ]
 

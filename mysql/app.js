@@ -11,6 +11,13 @@ connection.connect((err) => {
     else console.log("connected with the server");
 });
 
+const addingData = 'INSERT INTO town(houses, streets) VALUES(100, 30)';
+
+connection.query(addingData, (error, result)=>{
+    if(!error) return console.log("Rows Inserted", result);
+})
+
 connection.query('SELECT * FROM town', (error, results, fields) => {
     if (!error) return console.log(results);
 });
+
